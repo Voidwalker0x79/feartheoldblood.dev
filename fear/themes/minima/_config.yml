@@ -1,0 +1,46 @@
+#title in header
+title: "Fear The Old Blood"
+
+#main info
+#owner
+owner: "MasterGerhman"
+email: MasterGerhman@pm.me
+info: "A Bloodborne inspired personal site."
+
+#menu
+menu:
+  About: /about
+
+#index/main page max show posts (in number)
+max_post: 4
+
+# Colors use hex color without #
+# Theme color
+tcolor: 0FA0CE
+
+# Define path to user css
+#(could be also located outside of theme)
+# Relative to source/ directory
+usercss: css/user.css
+
+# social profile at the footer/bottom
+footer: true
+placename: Byrgenwerth
+placelink: https://bloodborne.fandom.com/wiki/Byrgenwerth
+github: https://github.com/0xvoidw
+linkedin: https://linkedin.com/in/HeavyMetalOps
+twitter: https://twitter.com/MasterGehrman
+
+# Misc
+nanobar: /js/nanobar.min.js
+switch_light: ☀️
+switch_dark: 🌑
+
+# favicon
+favicon: /images/hunter.png
+# thumbnail
+thumbnail: /images/thumbnail.jpg
+
+article:
+  thumbnail: true
+

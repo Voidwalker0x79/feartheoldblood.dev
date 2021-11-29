@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: FearTheOldBlood
-subtitle: 'TheBloodAwaits'
-description: 'A bloody blog'
+title: "Fear The Old Blood"
+subtitle: ''
+description: ''
 keywords:
 author: 0xvoidw
 language: en
@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://www.feartheoldblood.dev
+url: https://www.feartheoldblood.com
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -40,18 +40,18 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
-  enable: true
-  line_number: true
+  enable: false
+  line_number: false
   auto_detect: false
   tab_replace: ''
-  wrap: true
+  wrap: false
   hljs: false
 prismjs:
-  enable: false
+  enable: true
   preprocess: true
   line_number: true
   tab_replace: ''
@@ -95,11 +95,13 @@ exclude:
 ignore:
 
 # Extensions
-theme: fluid
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: minima
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: aws-s3
-  bucket: www.feartheoldblood.dev
-  region: us-east-1
+  type: 'aws-s3'
+  region: 'us-east-1'
+  bucket: 'www.feartheoldblood.dev'
