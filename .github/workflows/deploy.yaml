@@ -1,0 +1,17 @@
+name: Run a spotify script & deploy results to Feartheoldblood.
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Run spotify script
+      run: |
+        chmod +x ./scripts/spotify.sh
+      shell: bash
+# deploy:
+#   type: git
+#   repo: git@github.com:yrpang/yrpang.github.io.git
+#   branch: master
