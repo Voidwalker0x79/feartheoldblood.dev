@@ -1,5 +1,4 @@
 name: Run a spotify script & deploy results to Feartheoldblood.
-
 on: [push]
 
 jobs:
@@ -8,6 +7,9 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Run spotify script
+      env:
+        SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+        SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_SECRET_KEY }}
       run: |
         chmod +x ./scripts/spotify.sh
       shell: bash
