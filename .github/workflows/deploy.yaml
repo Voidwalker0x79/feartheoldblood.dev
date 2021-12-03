@@ -7,12 +7,10 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Run spotify script
-      env:
+      - run: chmod +x ./scripts/spotify.sh
+    env:
         SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
         SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_SECRET_KEY }}
-      run: |
-        chmod +x ./scripts/spotify.sh
-      shell: bash
 # deploy:
 #   type: git
 #   repo: git@github.com:yrpang/yrpang.github.io.git
